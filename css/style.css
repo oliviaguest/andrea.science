@@ -7,8 +7,12 @@ html{
   font-size: 1rem;
 
 }
-h1, h2, h3, h4, h5 {
+
+nav, h1, h2, h3, h4, h5 {
   font-family: 'Comfortaa', cursive;
+
+}
+h1, h2, h3, h4, h5 {
   color: #421E42;
 
 }
@@ -25,7 +29,11 @@ main {
 }
 
 .sidenav li>a, nav ul a {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
+}
+
+nav .brand-logo {
+  font-size: 1.5rem;
 }
 
 nav {
@@ -44,7 +52,7 @@ nav .brand-logo{
     margin: 0 auto;
     max-width: 750px;
     width: 75%;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
 
 }
 
