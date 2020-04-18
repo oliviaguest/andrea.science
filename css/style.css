@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Open+Sans:ital,wght@0,300;0,600;1,300;1,600&display=swap');
+
+
+
+html{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1rem;
+
+}
+h1, h2, h3, h4, h5 {
+  font-family: 'Comfortaa', cursive;
+  color: #421E42;
+
+}
+
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+main {
+  flex: 1 0 auto;
+  font-size: 1.2rem;
+}
+
+.sidenav li>a, nav ul a {
+    font-size: 1.5rem;
+}
+
+nav {
+    background-color: #421E42;
+}
+
+nav .brand-logo, nav ul a, nav a {
+    /* color: #000; */
+}
+
+nav .brand-logo{
+    margin-left: 1rem;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 750px;
+    width: 75%;
+    font-size: 1.5rem;
+
+}
+
+.page-footer {
+    color: #000;
+    background-color: #eee;
+}
+
+a.anchor {
+    display: block;
+    position: relative;
+    top: -64px;
+    visibility: hidden;
+}
+
+strong, b {
+    font-weight: 600;
+}
+
+.divider {
+    height: 3px;
+    overflow: hidden;
+    background-color: #eee;
+}
+
+a {
+  color: #000;
+}
+p a:hover, li a:hover {
+  text-decoration: underline;
+}

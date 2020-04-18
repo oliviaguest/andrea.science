@@ -1,0 +1,49 @@
+---
+layout: base
+---
+
+{% capture my_include %}{% include andrea.md %}{% endcapture %}
+{{ my_include | markdownify }}
+
+{% include photos.html %}
+
+<div class="divider"></div>
+
+{% capture my_include %}{% include current_position.md %}{% endcapture %}
+{{ my_include | markdownify }}
+
+<div class="divider"></div>
+
+{% capture my_include %}{% include education_experience.md %}{% endcapture %}
+{{ my_include | markdownify }}
+
+<div class="divider"></div>
+
+<a class="anchor" name="publications"></a>
+{% capture my_include %}{% include publications.md %}{% endcapture %}
+{{ my_include | markdownify }}
+
+<div class="divider"></div>
+
+{% capture my_include %}{% include grants.md %}{% endcapture %}
+{{ my_include | markdownify }}
+
+<div class="divider"></div>
+
+{% capture my_include %}{% include fellowships.md %}{% endcapture %}
+{{ my_include | markdownify }}
+
+<div class="divider"></div>
+
+{% capture my_include %}{% include keynotes.md %}{% endcapture %}
+{{ my_include | markdownify }}
+
+<div class="divider"></div>
+
+{% capture my_include %}{% include research_interests.md %}{% endcapture %}
+{{ my_include | markdownify }}
+
+<div class="divider"></div>
+
+{% capture my_include %}{% include teaching_interests.md %}{% endcapture %}
+{{ my_include | markdownify }}

@@ -1,0 +1,30 @@
+<footer class="page-footer">
+  <div class="container">
+    <div class="row">
+      <div class="col l6 s12">
+        <h5 class="">Andrea E. Martin</h5>
+        <a class="anchor" name="contact"></a>
+
+        <p class="grey-text text-lighten-4">
+          {% capture my_include %}{% include emails.md %}{% endcapture %}
+          {{ my_include | markdownify }}
+        </p>
+      </div>
+      <div class="col l4 offset-l2 s12">
+        <h5 class="">Links</h5>
+        <ul>
+          <li><a class="" href="#!">Link 1</a></li>
+          <li><a class="" href="#!">Link 2</a></li>
+          <li><a class="" href="#!">Link 3</a></li>
+          <li><a class="" href="#!">Link 4</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="footer-copyright">
+    <div class="container">
+    <a>© 2019–{{ site.time | date: '%y' }} Andrea E. Martin</a>
+    <a class="right" href="#top">Top of page</a>
+    </div>
+  </div>
+</footer>
