@@ -1,22 +1,18 @@
 ---
 layout: base
-permalink: index.html
 ---
 
-{% capture my_include %}{% include andrea.md %}{% endcapture %}
-{{ my_include | markdownify }}
+{% include andrea.html %}
 
 {% include photos.html %}
 
 <div class="divider"></div>
 
-{% capture my_include %}{% include current_position.md %}{% endcapture %}
-{{ my_include | markdownify }}
+{% include current_position.html %}
 
 <div class="divider"></div>
 
-{% capture my_include %}{% include education_experience.md %}{% endcapture %}
-{{ my_include | markdownify }}
+{% include education_experience.html %}
 
 <div class="divider"></div>
 

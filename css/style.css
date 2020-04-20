@@ -2,18 +2,26 @@
 
 
 
-html{
+html, body {
   font-family: 'Open Sans', sans-serif;
   font-size: 1rem;
 
 }
 
-nav, h1, h2, h3, h4, h5 {
-  font-family: 'Comfortaa', cursive;
+/* h2.footer
+{
+  color: black;
+  font-size: 3rem;
+} */
 
+nav, h1, h2, h3, h4, h5 {
+  font-family: 'Comfortaa', sans-serif;
+  box-shadow: none;
+  -webkit-box-shadow: none;
 }
+
 h1, h2, h3, h4, h5 {
-  color: #421E42;
+  color: #006580;
 
 }
 
@@ -37,7 +45,7 @@ nav .brand-logo {
 }
 
 nav {
-    background-color: #421E42;
+    background-color: #000;
 }
 
 nav .brand-logo, nav ul a, nav a {
@@ -58,7 +66,7 @@ nav .brand-logo{
 
 .page-footer {
     color: #000;
-    background-color: #eee;
+    background-color: #76C1CC;
 }
 
 a.anchor {
@@ -77,10 +85,105 @@ strong, b {
     overflow: hidden;
     background-color: #eee;
 }
-
+/*
 a {
   color: #000;
 }
 p a:hover, li a:hover {
   text-decoration: underline;
+} */
+
+h2.section {
+/* a { */
+   /* color: #76C1CC; */
+   text-shadow: 1px 1px #76C1CC,
+                2px 2px #76C1CC,
+                3px 3px #76C1CC;
+}
+h2.section:hover {
+   position: relative;
+   top: -3px;
+   left: -3px;
+   text-shadow: 1px 1px #76C1CC,
+                2px 2px #76C1CC,
+                3px 3px #76C1CC,
+                4px 4px #76C1CC,
+                5px 5px #76C1CC,
+                6px 6px #76C1CC;
+}
+
+
+div.special {
+/* a { */
+   color: #76C1CC;
+   font-size: 3rem;
+   text-align: center;
+   padding-bottom: 1rem;
+
+}
+
+div.special2 {
+/* a { */
+   color: #000;
+   font-size: 1.5rem;
+   text-align: center;
+
+}
+
+
+div.photos {
+  padding-top: 3rem;
+}
+
+body a {
+  color: #006580;
+}
+
+
+li {
+  padding-bottom: 1rem;
+}
+
+li:last-child
+{padding-bottom: 0;}
+
+
+div.container p a, div.container li a, table a{
+  text-decoration: underline;
+  text-decoration-color: #76C1CC;
+
+}
+div.container p a:hover, div.container li a:hover {
+  text-decoration: none;
+  background-color: #B0F0F2;
+  color: black;
+
+}
+
+
+table.blueTable {
+  /* width: 100%; */
+  /* table-layout: fixed; */
+  text-align: left;
+  border-collapse: collapse;
+
+}
+
+td {
+  /* width: 100%; */
+  /* table-layout: fixed; */
+}
+
+
+
+table.blueTable tr:nth-child(odd) {
+  background: #f7f8f9;
+}
+/*
+table.blueTable tr:nth-child(even) {
+  background: #C9FEFE;
+} */
+
+tr {
+    border-bottom: 0;
 }
