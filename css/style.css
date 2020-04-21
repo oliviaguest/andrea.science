@@ -11,7 +11,6 @@ html, body {
 
 nav, .sidenav, h1, h2, h3, h4, h5 {
   font-family: 'Major Mono Display', sans-serif;
-
   box-shadow: none;
   -webkit-box-shadow: none;
 }
@@ -125,13 +124,13 @@ div.special2 {
    color: #000;
    font-size: 1.5rem;
    text-align: center;
-
+   padding-bottom: 2rem;
 }
 
 
-div.photos {
+/* div.photos {
   padding-top: 3rem;
-}
+} */
 
 .main a {
   color: #006580;
@@ -188,12 +187,52 @@ tr {
   padding-bottom: 1.5rem;
 }
 
+@media only screen and (max-width: 750px) {
 
-/* @media only screen and (max-width: 450px) {
-  nav .brand-logo {
-    font-size: 1.2rem;
+.andrea {
+    font-size: 2rem;
+}
+}
+
+@media only screen and (max-width: 500px) {
+  h1, h2, h3, h4, h5 {
+    font-size: 1.25rem;
   }
-} */
+  nav .brand-logo {
+    margin-left: 0;
+    font-size: 1rem;
+}
+.andrea {
+    font-size: 1.5rem;
+}
+
+div.special, div.special2 {
+  display: none;
+}
+
+
+}
+@media only screen and (max-width: 400px) {
+  /* nav .brand-logo {
+    font-size: 1.2rem;
+  } */
+  .andrea {
+    font-size: 1rem;
+}
+  h1, h2, h3, h4, h5
+  {
+    font-size: 1rem;
+
+  }
+
+  nav .brand-logo {
+    font-size: 0.8rem;
+  }
+
+
+
+}
+
 
 #contact a {
   color: black;
