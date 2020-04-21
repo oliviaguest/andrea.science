@@ -1,20 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Open+Sans:ital,wght@0,300;0,600;1,300;1,600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Raleway+Dots&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Open+Sans+Condensed:ital,wght@0,300;0,700;1,300&display=swap');
 
 
 html, body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Open Sans Condensed', sans-serif;
   font-size: 1rem;
 
 }
 
 
 nav, .sidenav, h1, h2, h3, h4, h5 {
-  font-family: 'Comfortaa', sans-serif;
+  font-family: 'Major Mono Display', sans-serif;
 
   box-shadow: none;
   -webkit-box-shadow: none;
@@ -87,13 +83,17 @@ a.anchor {
 }
 
 strong, b {
-    font-weight: 600;
+    font-weight: 700;
 }
 
 .divider {
     height: 3px;
     overflow: hidden;
     background-color: #eee;
+}
+
+.andrea {
+  font-size: 3rem;
 }
 
 h2.section, .andrea, h3.section {
@@ -133,10 +133,21 @@ div.photos {
   padding-top: 3rem;
 }
 
-.container a {
+.main a {
   color: #006580;
 }
 
+footer a {
+  color: #fff;
+}
+
+footer ul>li {
+      display: inline-block;
+}
+
+footer a:hover {
+  color: #000;
+}
 
 li {
   padding-bottom: 1rem;
@@ -146,12 +157,12 @@ li:last-child
 {padding-bottom: 0;}
 
 
-div.container p a, div.container li a, table a, .pub-item a {
+div.main p a, div.main li a, table a, .pub-item a {
   text-decoration: underline;
   text-decoration-color: #76C1CC;
 
 }
-div.container p a:hover, div.container li a:hover, table a:hover, .pub-item a:hover{
+div.main p a:hover, div.main li a:hover, table a:hover, .pub-item a:hover{
   text-decoration: none;
   background-color: #B0F0F2;
   color: black;
@@ -182,4 +193,22 @@ tr {
   nav .brand-logo {
     font-size: 1.2rem;
   }
+}
+
+#contact a {
+  color: black;
+     text-shadow: 1px 1px #B0F0F2,
+                2px 2px #B0F0F2,
+                3px 3px #B0F0F2;
+}
+#contact a:hover {
+   position: relative;
+   top: -3px;
+   left: -3px;
+   text-shadow: 1px 1px #B0F0F2,
+                2px 2px #B0F0F2,
+                3px 3px #B0F0F2,
+                4px 4px #B0F0F2,
+                5px 5px #B0F0F2,
+                6px 6px #B0F0F2;
 }
