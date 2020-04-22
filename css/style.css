@@ -251,3 +251,9 @@ div.special, div.special2 {
                 5px 5px #B0F0F2,
                 6px 6px #B0F0F2;
 }
+
+.footer-copyright
+{text-align: center;
+  padding-bottom: 1.5rem !important;
+  padding-top: 1.5rem !important;
+}
