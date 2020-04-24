@@ -136,6 +136,7 @@ div.special2 {
   color: #006580;
 }
 
+
 footer a {
   color: #fff;
 }
@@ -253,7 +254,9 @@ div.special, div.special2 {
 }
 
 .footer-copyright
-{text-align: center;
+{
+  text-align: center;
+
   padding-bottom: 1.5rem !important;
   padding-top: 1.5rem !important;
 }
