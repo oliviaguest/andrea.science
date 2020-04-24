@@ -1,5 +1,5 @@
-<a class="anchor" name="publications"></a>
-<h2 class="section"><a href="#publications">Publications</a></h2>
+<a class="anchor" name="preprints"></a>
+<h2 class="section"><a href="#preprints">Preprints</a></h2>
 <p>The * indicates a trainee-led paper.
 </p>
 
@@ -9,27 +9,9 @@
 {% assign track_year = 0 %}
 {% assign current_year = 'now' | date: "%Y" %}
 
-{% for output in outputs %}
+{% for output in preprints %}
 
-  {% if output.Type == 'preprint' %}
-    {% continue %}
-  {% elsif output.Type == 'supplemental' %}
-    {% continue %}
-  {% endif %}
 
-{% comment %} Year headings {% endcomment %}
-  {% assign year = output.Date | date: "%Y"  %}
-  {% if track_year != year %}
-    {% assign year_text = output.Date | date: "%Y" %}
-    {% if year == current_year %}
-      {% assign year_text = year | append: " & in press" %}
-    {% endif %}
-    <a class="anchor" id="{{ year }}"></a>
-    <h3 class="section"><a href="#{{ year }}">{{ year_text }}
-      <!-- <i class="fas fa-link anchor-link"></i> -->
-    </a></h3>
-    {% assign track_year = year %}
-  {% endif %}
 
   <div class="pub-item">
 
@@ -90,7 +72,17 @@
       <span class="osf icon" title="OSF Repository"><a href = "{{ output.OSF }}"><i class="ai ai-osf"></i></a></span>
     {% endif %}
 
+    {% if output.Type == 'journal article' %}
 
+      {% comment %} Associating supplementals with current journal article {% endcomment %}
+      {% assign supplemental = supplementals | where:"Title",output.Title %}
+      {% assign supplemental = supplementals[0] %}
+      {% if supplemental.Title == output.Title %}
+        <span class="supplemental icon" title="Supplemental">
+          <a href="{{supplemental["PDF Link"]}}"><i class="far fa-file"></i></a>
+        </span>
+      {% endif %}
+    {% endif %}
     <!-- <a class="tag" href="{{site.url}}/{{output.Theme | replace: ' ', '-' }}">{{output.Theme | replace: '-', ' ' }}</a> -->
 
   </div>
