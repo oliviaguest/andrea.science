@@ -1,8 +1,4 @@
-
-// Or with jQuery
-
 $(document).ready(function(){
-
 
   $.fn.wrapInTag = function(opts) {
 
@@ -20,20 +16,4 @@ $(document).ready(function(){
     tag: 'b',
     words: ['Martin, A. E.']
   });
-
-// pub-item
-
-  // var authors = document.getElementsByClassName("authors");
-
-  // console.log(x);
-
-  // $(".authors").html('boop');
-  // $('.authors').html(html.replace(/Martin, A. E./gi, '<strong>$&</strong>'));
-
-  // for (let a of authors) {
-  //     console.log(a.innerHTML);
-  //     a.innerHTML = '<b>' + a.innerHTML + '</b>'
-  //     // a.innerHTML.replace("Martin, A. E.", "<b>Martin, A. E.</b>");
-  // }
-
 });
